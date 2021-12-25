@@ -21,7 +21,7 @@ module.exports = {
       { text: '收藏', link: '/pages/beb6c0bd8a66cea6/' }
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    logo: '/img/avatar_cut.jpg', // 导航栏logo
+    logo: 'https://cdn.jsdelivr.net/gh/sexileman/picture-bed/blog/avatar_cut.jpg', // 导航栏logo
     // repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
@@ -37,9 +37,14 @@ module.exports = {
     categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
     bodyBgImg: [
-      'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
-      'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
-      'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
+      'https://cdn.jsdelivr.net/gh/sexileman/picture-bed/blog/ce329083a43b4526ac6129f8c651bae5.jpg',
+      'https://cdn.jsdelivr.net/gh/sexileman/picture-bed/blog/c5340e3e880811ebb6edd017c2d2eca2.jpg',
+      'https://cdn.jsdelivr.net/gh/sexileman/picture-bed/blog/a58cbbffd2aa49c1b1e99990be912f30.jpg',
+      'https://cdn.jsdelivr.net/gh/sexileman/picture-bed/blog/01217514880511ebb6edd017c2d2eca2.jpg',
+      'https://cdn.jsdelivr.net/gh/sexileman/picture-bed/blog/94628268331f4a9b92c0c36f5f4b196b.jpg',
+      'https://cdn.jsdelivr.net/gh/sexileman/picture-bed/blog/865885b0881611ebb6edd017c2d2eca2.png',
+      'https://cdn.jsdelivr.net/gh/sexileman/picture-bed/blog/2387ae258a104923ad649dbb740b4f8b.jpg',
+      'https://cdn.jsdelivr.net/gh/sexileman/picture-bed/blog/76b54d3c880511ebb6edd017c2d2eca2.png'
     ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
     bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
 
@@ -69,8 +74,7 @@ module.exports = {
 
     // 博主信息，显示在首页侧边栏
     blogger: {
-      // avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-      avatar: '/img/avatar_cut.jpg',
+      avatar: 'https://cdn.jsdelivr.net/gh/sexileman/picture-bed/blog/avatar_cut.jpg',
       name: '琴在树下',
       slogan: '逝者如斯夫，不舍昼夜',
     },
