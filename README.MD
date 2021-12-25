@@ -1,5 +1,5 @@
 ## 介绍
-1. 使用 [VuePress v2.0](https://github.com/vuepress/vuepress-next) 搭建的个人博客
+1. 使用 [vuepress-theme-vdoing](https://github.com/xugaoyi/vuepress-theme-vdoing) 搭建的个人博客
 
 ## 快速上手
 

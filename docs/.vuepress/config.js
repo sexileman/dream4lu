@@ -2,11 +2,11 @@ const baiduCode = require('./config/baiduCode.js'); // 百度统计hm码
 const htmlModules = require('./config/htmlModules.js');
 
 module.exports = {
-  theme: 'vdoing', // 使用npm包主题
-  // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
+  // theme: 'vdoing', // 使用npm包主题
+  theme: require.resolve('../../theme-vdoing'), // 使用本地主题
 
   title: "琴在树下",
-  description: 'Rome was not built in a day.',
+  description: '逝者如斯夫，不舍昼夜',
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
 
   // 主题配置
@@ -146,7 +146,7 @@ module.exports = {
     // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
     author: {
       name: 'dream4lu', // 必需
-      link: 'https://github.com/xugaoyi', // 可选的
+      link: 'https://github.com/sexileman/dream4lu', // 可选的
     },
 
     // 博主信息，显示在首页侧边栏
@@ -154,7 +154,7 @@ module.exports = {
       // avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
       avatar: '/img/avatar_cut.jpg',
       name: '琴在树下',
-      slogan: '生活很美好的',
+      slogan: '逝者如斯夫，不舍昼夜',
     },
 
     // 社交图标，显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social
@@ -164,17 +164,17 @@ module.exports = {
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'mailto:894072666@qq.com',
+          link: 'mailto:1019250544@qq.com',
         },
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/xugaoyi',
+          link: 'https://github.com/sexileman/dream4lu',
         },
         {
           iconClass: 'icon-erji',
           title: '听音乐',
-          link: 'https://music.163.com/#/playlist?id=755597173',
+          link: 'https://music.163.com/#/playlist?id=437088747',
         },
       ],
     },
@@ -183,11 +183,11 @@ module.exports = {
     footer: {
       createYear: 2021, // 博客创建年份
       copyrightInfo:
-        'sexileman | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">备案</a>', // 博客版权信息，支持a标签
+        'dream4lu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">备案</a>', // 博客版权信息，支持a标签
     },
 
     // 插入hmtl(广告)模块
-    htmlModules
+    // htmlModules
   },
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
