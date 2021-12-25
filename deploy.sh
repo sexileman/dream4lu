@@ -17,14 +17,14 @@ if [ -z "$GITHUB_TOKEN" ]; then
   githubUrl=git@github.com:sexileman/dream4lu.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://sexileman:${GITHUB_TOKEN}@github.com/sexileman/sexileman.github.io.git
+  githubUrl=https://sexileman:${GITHUB_TOKEN}@github.com/sexileman/dream4lu.git
   git config --global user.name "sexileman"
   git config --global user.email "jianggaoping521@gmail.com"
 fi
 git init
 git add -A
 git commit -m "${msg}"
-git push -f "$githubUrl" main:main # 推送到github gh-pages分支
+git push -f "$githubUrl" main:pages # 推送到github gh-pages分支
 
 # deploy to coding pages
 # echo 'www.xugaoyi.com\nxugaoyi.com' > CNAME  # 自定义域名
