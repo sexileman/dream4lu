@@ -20,6 +20,7 @@ else
   githubUrl=https://sexileman:${GITHUB_TOKEN}@github.com/sexileman/dream4lu.git
   git config user.name "sexileman"
   git config user.email "jianggaoping521@gmail.com"
+  git config -l
 fi
 git init
 git add -A
