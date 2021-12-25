@@ -218,18 +218,19 @@ module.exports = {
       {
         choosen: 'gitalk',
         options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-          repo: 'blog-gitalk-comment', // GitHub 仓库
-          owner: 'xugaoyi', // GitHub仓库所有者
-          admin: ['xugaoyi'], // 对仓库有写权限的人
-          // distractionFreeMode: true,
+          clientID: 'b0708cd68ce2cca2144d',
+          clientSecret: 'b3249e514baff2dd88e4844311325ca21262329b',
+          // clientID: '4381d79348bb28c2009a',
+          // clientSecret: '8fcaec50b5a382b566d0f3c708da5476a0c8a0f6',
+          repo: 'gitalk-records', // GitHub 仓库
+          owner: 'sexileman', // GitHub仓库所有者
+          admin: ['sexileman'], // 对仓库有写权限的人
+          distractionFreeMode: false,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
           id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-          title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
+          title: "「评论」<%- document.title %>", // GitHub issue 的标题
           labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-          body:
-            '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+          body: '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
         },
       },
     ],
