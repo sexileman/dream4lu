@@ -18,10 +18,10 @@ if [ -z "$GITHUB_TOKEN" ]; then
 else
   msg='来自github actions的自动部署'
   githubUrl=https://sexileman:${GITHUB_TOKEN}@github.com/sexileman/dream4lu.git
+  git init
   git config --global user.name "sexileman"
   git config --global user.email "jianggaoping521@gmail.com"
 fi
-git init
 git add -A
 git commit -m "${msg}"
 git push -f "$githubUrl" main:pages # 推送到github gh-pages分支
