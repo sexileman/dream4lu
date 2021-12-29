@@ -151,7 +151,6 @@ isNotEmpty([1, 2, 3]);  // true
 const merge = (a, b) => a.concat(b);
 
 const merge = (a, b) => [...a, ...b];
-复制代码
 ```
 
 ## 四、数字操作
@@ -164,7 +163,6 @@ const merge = (a, b) => [...a, ...b];
 const isEven = num => num % 2 === 0;
 
 isEven(996);
-复制代码
 ```
 
 ### 2. 获得一组数的平均值
@@ -173,7 +171,6 @@ isEven(996);
 const average = (...args) => args.reduce((a, b) => a + b) / args.length;
 
 average(1, 2, 3, 4, 5);   // 3
-复制代码
 ```
 
 ### 3. 获取两个整数之间的随机整数
@@ -184,7 +181,6 @@ average(1, 2, 3, 4, 5);   // 3
 const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
 random(1, 50);
-复制代码
 ```
 
 ### 4. 指定位数四舍五入
@@ -196,7 +192,6 @@ const round = (n, d) => Number(Math.round(n + "e" + d) + "e-" + d)
 
 round(1.005, 2) //1.01
 round(1.555, 2) //1.56
-复制代码
 ```
 
 ## 五、颜色操作
@@ -209,7 +204,6 @@ round(1.555, 2) //1.56
 const rgbToHex = (r, g, b) => "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
 
 rgbToHex(255, 255, 255);  // '#ffffff'
-复制代码
 ```
 
 ### 2. 获取随机十六进制颜色
@@ -220,7 +214,6 @@ rgbToHex(255, 255, 255);  // '#ffffff'
 const randomHex = () => `#${Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, "0")}`;
 
 randomHex();
-复制代码
 ```
 
 ## 六、浏览器操作
@@ -233,7 +226,6 @@ randomHex();
 const copyToClipboard = (text) => navigator.clipboard.writeText(text);
 
 copyToClipboard("Hello World");
-复制代码
 ```
 
 ### 2. 清除所有cookie
@@ -242,7 +234,6 @@ copyToClipboard("Hello World");
 
 ```javascript
 const clearCookies = document.cookie.split(';').forEach(cookie => document.cookie = cookie.replace(/^ +/, '').replace(/=.*/, `=;expires=${new Date(0).toUTCString()};path=/`));
-复制代码
 ```
 
 ### 3. 获取选中的文本
@@ -253,7 +244,6 @@ const clearCookies = document.cookie.split(';').forEach(cookie => document.cooki
 const getSelectedText = () => window.getSelection().toString();
 
 getSelectedText();
-复制代码
 ```
 
 ### 4. 检测是否是黑暗模式
@@ -264,7 +254,6 @@ getSelectedText();
 const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
 
 console.log(isDarkMode)
-复制代码
 ```
 
 ### 5. 滚动到页面顶部
@@ -275,7 +264,6 @@ console.log(isDarkMode)
 const goToTop = () => window.scrollTo(0, 0);
 
 goToTop();
-复制代码
 ```
 
 ### 6. 判断当前标签页是否激活
@@ -284,7 +272,6 @@ goToTop();
 
 ```javascript
 const isTabInView = () => !document.hidden;
-复制代码
 ```
 
 ### 7. 判断当前是否是苹果设备
@@ -295,7 +282,6 @@ const isTabInView = () => !document.hidden;
 const isAppleDevice = () => /Mac|iPod|iPhone|iPad/.test(navigator.platform);
 
 isAppleDevice();
-复制代码
 ```
 
 ### 8. 是否滚动到页面底部
@@ -304,7 +290,6 @@ isAppleDevice();
 
 ```javascript
 const scrolledToBottom = () => document.documentElement.clientHeight + window.scrollY >= document.documentElement.scrollHeight;
-复制代码
 ```
 
 ### 9. 重定向到一个URL
@@ -315,7 +300,6 @@ const scrolledToBottom = () => document.documentElement.clientHeight + window.sc
 const redirect = url => location.href = url
 
 redirect("https://www.google.com/")
-复制代码
 ```
 
 ### 10. 打开浏览器打印框
@@ -324,7 +308,6 @@ redirect("https://www.google.com/")
 
 ```javascript
 const showPrintDialog = () => window.print()
-复制代码
 ```
 
 ## 七、其他操作
@@ -337,7 +320,6 @@ const showPrintDialog = () => window.print()
 const randomBoolean = () => Math.random() >= 0.5;
 
 randomBoolean();
-复制代码
 ```
 
 ### 2. 变量交换
@@ -346,7 +328,6 @@ randomBoolean();
 
 ```javascript
 [foo, bar] = [bar, foo];
-复制代码
 ```
 
 ### 3. 获取变量的类型
@@ -364,7 +345,6 @@ trueTypeOf({});     // object
 trueTypeOf([]);     // array
 trueTypeOf(0);      // number
 trueTypeOf(() => {});  // function
-复制代码
 ```
 
 ### 4. 华氏度和摄氏度之间的转化
@@ -380,7 +360,6 @@ celsiusToFahrenheit(0);     // 32
 celsiusToFahrenheit(-20);   // -4
 fahrenheitToCelsius(59);    // 15
 fahrenheitToCelsius(32);    // 0
-复制代码
 ```
 
 ### 5. 检测对象是否为空
@@ -389,7 +368,6 @@ fahrenheitToCelsius(32);    // 0
 
 ```javascript
 const isEmpty = obj => Reflect.ownKeys(obj).length === 0 && obj.constructor === Object;
-复制代码
 ```
 
 

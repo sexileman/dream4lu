@@ -22,11 +22,12 @@ module.exports = {
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: 'https://cdn.jsdelivr.net/gh/sexileman/picture-bed/blog/avatar_cut.jpg', // 导航栏logo
-    // repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
+    repo: 'sexileman/dream4lu', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
     editLinks: true, // 启用编辑
+    docsBranch: 'main', // 分支
     editLinkText: '编辑',
 
     //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
@@ -119,30 +120,30 @@ module.exports = {
       'meta',
       {
         name: 'keywords',
-        content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
+        content: '个人技术博客,技术文档,学习,JavaScript,js,vue,css3,html5,Node,git,github,markdown',
       },
     ],
-    ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
+    // ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
-    [
+    /*[
       'script',
       {
         'data-ad-client': 'ca-pub-7828333725993554',
         async: 'async',
         src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
       },
-    ], // 网站关联Google AdSense 与 html格式广告支持（你可以去掉）
+    ],*/ // 网站关联Google AdSense 与 html格式广告支持（你可以去掉）
   ],
 
   // 插件配置
   plugins: [
     // 本地插件（供学习）
-    // [require('./plugins/love-me'), { // 鼠标点击爱心特效
-    //   color: '#11a8cd', // 爱心颜色，默认随机色
-    //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
-    // }],
+    /*[require('./plugins/love-me'), { // 鼠标点击爱心特效
+      // color: '#11a8cd', // 爱心颜色，默认随机色
+      // excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
+    }],*/
 
-    'vuepress-plugin-baidu-autopush', // 百度自动推送
+    // 'vuepress-plugin-baidu-autopush', // 百度自动推送
 
     // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
     [
@@ -207,12 +208,12 @@ module.exports = {
         },
       },
     ],
-    [
+    /*[
       'vuepress-plugin-baidu-tongji', // 百度统计 （你可以去掉）
       {
         hm: baiduCode || '503f098e7e5b3a5b5d8c5fc2938af002',
       },
-    ],
+    ],*/
     [
       'vuepress-plugin-comment', // 评论
       {
