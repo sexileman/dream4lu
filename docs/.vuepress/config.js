@@ -106,7 +106,7 @@ module.exports = {
     footer: {
       createYear: 2021, // 博客创建年份
       copyrightInfo:
-        'dream4lu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">备案</a>', // 博客版权信息，支持a标签
+        'dream4lu | <a href="https://beian.miit.gov.cn" target="_blank">蜀ICP备2022000292号</a>', // 博客版权信息，支持a标签
     },
 
     // 插入hmtl(广告)模块
