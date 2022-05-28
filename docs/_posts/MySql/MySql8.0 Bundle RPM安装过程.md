@@ -17,7 +17,7 @@ author: sexileman
 
 ```sh
 rpm -qa|grep -i mysql
-也可能是
+# 也可能是
 rpm -qa|grep -i mariadb
 ```
 
@@ -36,6 +36,7 @@ rm -rf /usr/share/mysql /usr/lib64/mysql /etc/selinux/targeted/active/modules/10
 ###### 3.下载并解压tar安装包
 
 ```sh
+# 使用wget下载
 wget https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.29-1.el8.x86_64.rpm-bundle.tar
 tar -xvf mysql-8.0.29-1.el8.x86_64.rpm-bundle.tar
 ```
@@ -51,11 +52,12 @@ yum -y install net-tools
 ###### 5.按顺序安装rpm包
 
 ```sh
-rpm -ivh r
-rpm -ivh
-rpm -ivh
-rpm -ivh
-rpm -ivh
+rpm -ivh mysql-community-common-8.0.29-1.el7.x86_64.rpm
+rpm -ivh mysql-community-client-plugins-8.0.29-1.el7.x86_64.rpm
+rpm -ivh mysql-community-libs-8.0.29-1.el7.x86_64.rpm
+rpm -ivh mysql-community-client-8.0.29-1.el7.x86_64.rpm
+rpm -ivh mysql-community-icu-data-files-8.0.29-1.el7.x86_64.rpm
+rpm -ivh mysql-community-server-8.0.29-1.el7.x86_64.rpm
 ```
 
 ###### 6.查看、启动、停止mysqld服务
@@ -69,16 +71,19 @@ systemctl stop mysqld # 停止
 ###### 7.第一次登录查找临时密码（必须先启动mysql服务）
 
 ```sh
-#查找临时密码
+# 查找临时密码
 grep "temporary password" /var/log/mysqld.log
 ```
 
 ###### 8.使用临时密码登录，并设置新密码
 
-```mysql
-# 使用临时密码登录
+```sh
+# 使用临时密码登录如：OVgAh2Iwk2/r
 mysql -uroot -p
-# 设置新密码
+```
+
+```mysql
+-- 设置密码
 alter user 'root'@'localhost' identified by 'xxx';
 flush privileges;
 ```
