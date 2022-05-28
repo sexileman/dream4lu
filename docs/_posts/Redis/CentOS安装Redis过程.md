@@ -4,11 +4,11 @@ date: 2022-05-28 17:33:25
 permalink: /pages/jd3v22/
 sidebar: false
 categories:
-- Linux
-- Redis
-  tags:
-- Redis
-  author: sexileman
+  - Linux
+  - Redis
+tags:
+  - Redis
+author: sexileman
 ---
 
 ### 一、先去Redis官网下载
