@@ -1,7 +1,7 @@
 ---
 title: MySql8.0 Bundle RPM安装过程
 date: 2022-05-28 14:33:25
-permalink: /pages/sg6x2/
+permalink: /pages/sg6x22/
 sidebar: false
 categories:
   - Linux
